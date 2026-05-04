@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# ------------------------------
+# PROJECT-SPECIFIC (IMPORTANT)
+# ------------------------------
+
+# Raw datasets (DO NOT PUSH)
+data/raw/
+data/movies.csv
+data/*.zip
+data/*.parquet
+data/*.json
+
+# Large files
+*.csv
+!data/processed_movies.csv
+
+# Keep ONLY processed dataset
+!data/processed_movies.csv
+
+# Streamlit cache (optional but clean)
+.streamlit/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Screenshots (optional include if needed)
+# assets/screenshots/
